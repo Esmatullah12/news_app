@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+
+.sidebar{  
+    height: 100vh;
+    border-right: 0.5px solid black;
+}
+
+.recent-news-title{
+    color: #0C356A;
+    font-family: "Poppins", sans-serif;
+    padding: 30px 15% ;
+    border-bottom: 0.5px solid rgb(166, 165, 165);
+}
+
+.news-articel{
+    background-color: #eaf6fc;
+    font-family: "Poppins", sans-serif;
+    padding: 25px 15%;
+    border-bottom: 0.5px solid rgb(166, 165, 165);
+}
+
+.news-articel:nth-last-child(even){
+    background-color: #f4fafe;
+}
+
+.news-date{
+    color: #0C356A;
+    font-weight: 700;
+}
+
+.news-title{
+    font-size: 0.9rem;
+    color: rgb(105, 104, 104);
+}
+
+.news-articel:last-child{
+    border-bottom: none;
+}
+
+.content{
+    height: 100vh;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-btn{
+    padding: 9px;
+    border-radius: 9px;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: 3px solid rgba(166, 165, 165, 0.3);
+    cursor: pointer;
+    margin: 30px 130px;
+}
+
+.btn-line1{
+    display: block;
+    width: 100%;
+    height: 2.5px;
+    background-color: black;
+}
+
+.btn-line2{
+    margin-top: 7px;
+    display: block;
+    width: 70%;
+    height: 2.5px;
+    background-color: black;
+}
+
+.nav-menu{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    background-image: linear-gradient(to bottom, rgb(230, 230, 230), white);
+    padding: 40px 130px 50px 60px;
+}
+
+.nav-link{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: #0C356A;
+}
+
+.container{
+    padding: 0px 130px;
+}
+
+.page-title{
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.model-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 160px 160px 160px;
+    gap: 20px;
+}
+
+.cont{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 15px 30px;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    color: white;
+}
+
+.news-card-title{
+    position: absolute;
+    z-index: 1;
+}
+
+.container1{
+    background-image: url(images/beach.jpg);
+    grid-column: span 2;
+    grid-row: span 2;
+    font-size: 1.8rem;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.container2{
+    background-image: url(images/flower1.jpg);
+}
+
+.container3{
+    background-image: url(images/news-paper.jpg);
+}
+
+.container4{
+    background-image: url(images/tree.jpg);
+}
+
+.container5{
+    background-image: url(images/beach.jpg);
+}
